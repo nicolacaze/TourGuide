@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Tour Guide</string>
+
+    <!-- ViewPager strings categories -->
+    <string name="short_trip">Short</string>
+    <string name="medium_trip">Medium</string>
+    <string name="advanced_trip">Long</string>
+    <string name="escape_trip">Escape</string>
+
+    <!--Mountain names-->
+    <string name="hautacam">Le Massif du Hautacam</string>
+    <string name="pic_du_midi">Le Tour du Pic du Midi d\'Ossau</string>
+    <string name="pic_anie">Les Arres du Pic d\'Anie</string>
+    <string name="turon_neouvielle">Le Turon du Néouvielle</string>
+    <string name="grand_barbat">L\'ascension du Grand Barbat</string>
+
+    <string name="sierra_guara">Sierra de Guara, au pays des canyons</string>
+    <string name="reino_mallos">El Reino de los Mallos</string>
+    <string name="trois_rois_dolomites">Paysages des Trois Rois</string>
+    <string name="cote_mediterraneenne">Côté Méditerranéenne, mer et montagne en Catalogne</string>
+    <string name="cote_basque">Côte Basque, splendeurs océanes</string>
+    <string name="sierra_guara_eldorado">Sierra de Guara, l\'eldorado pyrénéen</string>
+    <string name="sierras_cadi">Sierras de Cadi - Moixero</string>
+
+    <string name="pic_carlit">Le Pic du Carlit, l\'horizon aux quatre vents</string>
+    <string name="pic_balaitous">Le Pic du Balaïtous, la randonnée sauvage</string>
+    <string name="mont_perdu">Le Mont-Perdu, entre ciel et terre</string>
+    <string name="pic_posets">Le Pic des Posets, le colosse granitique</string>
+    <string name="pic_aneto">Le Pic d\'Aneto, le toit des Pyrénees</string>
+
+    <string name="ariegeoises">Montagnes Ariégeoises, la frontière sauvage</string>
+    <string name="picos_europa">Picos de Europa, les montagnes océanes</string>
+    <string name="encantats">Montagnes des Encantats, le pays des grands lacs</string>
+    <string name="trois_rois">Montagnes des Trois Rois</string>
+    <string name="mont_perdu_colorado">Montagnes du Mont-Perdu, le Colorado pyrénéen</string>
+
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:background="#2C2D3F"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/walk_picture"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/mountain_one" />
+
+
+    <TextView
+        android:id="@+id/walk_name"
+        style="@style/main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:padding="4dp"
+        android:textAlignment="center"
+        tools:text="Name" />
+
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/walk_picture"
+        android:padding="12dp"
+        android:src="@drawable/ic_access_time_white_24dp" />
+
+    <TextView
+        android:id="@+id/walk_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/walk_picture"
+        android:layout_toRightOf="@+id/clock"
+        android:paddingBottom="16dp"
+        android:textColor="@color/colorPrimaryLight"
+        tools:text="Duration" />
+
+    <ImageView
+        android:id="@+id/graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/walk_picture"
+        android:layout_toLeftOf="@+id/walk_level"
+        android:paddingBottom="12dp"
+        android:src="@drawable/ic_timeline_white_24dp" />
+
+    <TextView
+        android:id="@+id/walk_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/walk_picture"
+        android:layout_alignRight="@+id/walk_picture"
+        android:paddingBottom="16dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="16dp"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryLight"
+        tools:text="Level" />
+
+</RelativeLayout>
