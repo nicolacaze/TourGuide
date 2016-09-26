@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/walk_picture"
         android:padding="12dp"
-        android:src="@drawable/ic_access_time_white_24dp" />
+        android:src="@mipmap/ic_access_time_white_24dp" />
 
     <TextView
         android:id="@+id/walk_duration"
@@ -51,7 +51,7 @@
         android:layout_alignBottom="@+id/walk_picture"
         android:layout_toLeftOf="@+id/walk_level"
         android:paddingBottom="12dp"
-        android:src="@drawable/ic_timeline_white_24dp" />
+        android:src="@mipmap/ic_timeline_white_24dp" />
 
     <TextView
         android:id="@+id/walk_level"

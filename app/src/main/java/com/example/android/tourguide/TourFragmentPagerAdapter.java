@@ -12,7 +12,7 @@ public class TourFragmentPagerAdapter extends FragmentPagerAdapter {
 
     final int PAGE_COUNT = 4;
     private String tabTitles[] = new String[] { "Short", "Medium", "Long", "Escape" };
-    private Context context;
+
 
     public TourFragmentPagerAdapter(FragmentManager fm) {
         super(fm);

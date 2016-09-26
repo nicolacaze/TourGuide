@@ -64,7 +64,6 @@ public class Walk {
 
 
     //Defined the toString() method to display a String containing all Walk object data.
-
     @Override
     public String toString() {
         return "Walk{" +
