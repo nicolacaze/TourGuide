@@ -14,7 +14,6 @@
         android:scaleType="centerCrop"
         tools:src="@drawable/mountain_one" />
 
-
     <TextView
         android:id="@+id/walk_name"
         style="@style/main_text"
