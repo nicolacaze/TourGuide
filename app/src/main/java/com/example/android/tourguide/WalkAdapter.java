@@ -27,31 +27,45 @@ public class WalkAdapter extends ArrayAdapter<Walk> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
+        ViewHolder holder;
+
         View listItemView = convertView;
         if(listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.walk_layout, parent, false);
+            holder = new ViewHolder();
+            holder.nameTextView = (TextView) listItemView.findViewById(R.id.walk_name);
+            holder.durationTextView = (TextView) listItemView.findViewById(R.id.walk_duration);
+            holder.levelTextView = (TextView) listItemView.findViewById(R.id.walk_level);
+            holder.pictureImageView = (ImageView) listItemView.findViewById(R.id.walk_picture);
+            listItemView.setTag(holder);
+        } else {
+            holder = (ViewHolder) listItemView.getTag();
         }
         //Get the position of the current Walk.
-        final Walk currentWalk = getItem(position);
+        Walk currentWalk = getItem(position);
 
         //Assign the proper name to the current Walk.
-        TextView walkName = (TextView) listItemView.findViewById(R.id.walk_name);
-        walkName.setText(currentWalk.getWalkName());
+        holder.nameTextView.setText(currentWalk.getWalkName());
 
         //Assign the proper duration to the current Walk.
-        TextView walkDuration = (TextView) listItemView.findViewById(R.id.walk_duration);
-        walkDuration.setText(currentWalk.getWalkDuration());
+        holder.durationTextView.setText(currentWalk.getWalkDuration());
 
         //Assign the proper level to the current Walk.
-        TextView walkLevel = (TextView) listItemView.findViewById(R.id.walk_level);
-        walkLevel.setText(currentWalk.getWalkLevel());
+        holder.levelTextView.setText(currentWalk.getWalkLevel());
 
         //Assign the proper picture from drawables to the current Walk.
-        ImageView pictureView = (ImageView) listItemView.findViewById(R.id.walk_picture);
-        pictureView.setImageResource(currentWalk.getWalkPictureId());
-
+        holder.pictureImageView.setImageResource(currentWalk.getWalkPictureId());
 
         return listItemView;
     }
+
+    private static class ViewHolder {
+        private TextView nameTextView;
+        private TextView durationTextView;
+        private TextView levelTextView;
+        private ImageView pictureImageView;
+
+    }
 }
+
